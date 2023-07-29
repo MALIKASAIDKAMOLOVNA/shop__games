@@ -1,0 +1,1802 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url("../fonts/Orbitron-Regular.ttf");
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Orbitron";
+  font-style: normal;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: relative;
+}
+header .navbar {
+  background: -webkit-gradient(linear, left top, right top, from(#000), color-stop(60%, #57B8FF));
+  background: linear-gradient(to right, #000 0% 60%, #57B8FF 60% 100%);
+}
+header .navbar .container .nav__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+header .navbar .container .nav__top .nav__logo {
+  margin-right: 177px;
+}
+header .navbar .container .nav__top .nav__logo svg {
+  width: 170px;
+  height: 48px;
+}
+header .navbar .container .nav__top .nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+header .navbar .container .nav__top .nav__menu li a {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #FFF;
+}
+header .navbar .container .nav__top .nav__menu li a:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #FFF;
+  width: 45px;
+  color: #FAC422;
+}
+header .navbar .container .nav__top .nav__menu li a:active {
+  opacity: 0.5;
+}
+header .navbar .container .nav__top .nav__menu li .active {
+  color: #FAC422;
+}
+header .navbar .container .nav__top .nav__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+header .navbar .container .nav__top .nav__right .shopping {
+  position: relative;
+}
+header .navbar .container .nav__top .nav__right .shopping .shop {
+  width: 32px;
+  height: 32px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+header .navbar .container .nav__top .nav__right .shopping .shop:hover path {
+  fill: #e435e1;
+}
+header .navbar .container .nav__top .nav__right .shopping .shop:active {
+  opacity: 0.5;
+}
+header .navbar .container .nav__top .nav__right .shopping span {
+  position: absolute;
+  top: -9px;
+  right: -20px;
+}
+header .navbar .container .nav__top .nav__right .shopping span svg {
+  width: 21px;
+  height: 18px;
+}
+header .navbar .container .nav__top .nav__right .nav__top__btn {
+  background: #57B8FF;
+  padding: 16px 31px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #FFF;
+  border: 1px solid #FFF;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+header .navbar .container .nav__top .nav__right .nav__top__btn:hover {
+  background: #f1aeed;
+}
+header .navbar .container .nav__bottom {
+  padding-top: 209px;
+  padding-bottom: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .navbar .container .nav__bottom .nav__bottom__list {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  left: -70px;
+  top: 80px;
+  bottom: 0;
+  gap: 50px;
+}
+header .navbar .container .nav__bottom .nav__bottom__list li a {
+  font-size: 10px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #80858F;
+}
+header .navbar .container .nav__bottom .nav__bottom__left .fire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 8px;
+}
+header .navbar .container .nav__bottom .nav__bottom__left .fire svg {
+  width: 32px;
+  height: 32px;
+}
+header .navbar .container .nav__bottom .nav__bottom__left .fire h4 {
+  color: #57B8FF;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__box {
+  position: relative;
+  color: #FFF;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 80px;
+  width: 650px;
+  text-transform: capitalize;
+}
+header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__box span {
+  position: absolute;
+  top: -5px;
+  left: -20px;
+}
+header .navbar .container .nav__bottom .nav__bottom__left p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #999;
+  padding-top: 45px;
+  width: 615px;
+}
+header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 40px;
+  margin-top: 53px;
+}
+header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__btn .site-btn {
+  background: #57B8FF;
+  padding: 16px 31px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #FFF;
+  border: 1px solid #FFF;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__btn .site-btn:hover {
+  background: #f1aeed;
+}
+header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__btn .main-btn {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #FFF;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__btn .main-btn:hover {
+  color: #57B8FF;
+}
+header .navbar .container .nav__bottom .nav__bottom__right {
+  margin-right: 28px;
+}
+
+main .about {
+  background: #FDD04A;
+}
+main .about .container {
+  padding-top: 128px;
+  padding-bottom: 130px;
+}
+main .about .container .sponsors {
+  position: relative;
+}
+main .about .container .sponsors h3 {
+  text-align: center;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 400;
+  color: #222730;
+}
+main .about .container .sponsors span {
+  position: absolute;
+  top: 0;
+  right: 470px;
+}
+main .about .container .sponsors span svg {
+  width: 374px;
+}
+main .about .container p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 30px;
+  width: 576px;
+  margin: 0 auto;
+}
+main .about .container .about__cards {
+  margin-top: 40px;
+}
+main .about .container .about__cards a img {
+  width: 193px;
+  height: 89px;
+}
+main .about .container .about__cards a:not(:last-child) {
+  margin-right: 27px;
+}
+main .game__play {
+  background-image: url("../img/new__game__bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+main .game__play .container {
+  padding-top: 130px;
+}
+main .game__play .container .esports {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+}
+main .game__play .container .esports .game__fire svg {
+  width: 32px;
+  height: 32px;
+}
+main .game__play .container .esports h5 {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #57B8FF;
+}
+main .game__play .container h1 {
+  color: #FFF;
+  font-size: 64px;
+  line-height: 74px;
+  font-weight: 400;
+  text-align: center;
+  width: 716px;
+  margin: 0 auto;
+  padding-top: 11px;
+}
+main .game__play .container p {
+  color: rgba(223, 223, 223, 0.8);
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  text-align: center;
+  width: 698px;
+  margin: 0 auto;
+  padding-top: 39px;
+}
+main .game__play .container .game__play__cards {
+  margin-top: 64px;
+  padding-bottom: 130px;
+  gap: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main .game__play .container .game__play__cards .game__play__card {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  width: 586px;
+  height: 212px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+main .game__play .container .game__play__cards .game__play__card .game__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-left: 35px;
+  padding-top: 35px;
+  gap: 16px;
+}
+main .game__play .container .game__play__cards .game__play__card .game__box span svg {
+  width: 29px;
+  height: 29px;
+}
+main .game__play .container .game__play__cards .game__play__card .game__box h3 {
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 400;
+  color: #FFF;
+}
+main .game__play .container .game__play__cards .game__play__card p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: rgba(223, 223, 223, 0.8);
+  width: 470px;
+  text-align: start;
+  padding-left: 20px;
+  padding-top: 19px;
+}
+main .game__play .container .game__play__cards .game__play__card:hover {
+  background: rgb(10, 10, 93);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+main .team {
+  background: #000;
+}
+main .team .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 130px 0;
+}
+main .team .container .team__game__left .team__game__fire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 8px;
+}
+main .team .container .team__game__left .team__game__fire .future svg {
+  width: 32px;
+  height: 32px;
+}
+main .team .container .team__game__left .team__game__fire h5 {
+  color: #57B8FF;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+main .team .container .team__game__left h1 {
+  color: #FFF;
+  font-size: 64px;
+  line-height: 74px;
+  font-weight: 400;
+  width: 684px;
+  padding-top: 22px;
+}
+main .team .container .team__game__left p {
+  color: rgba(223, 223, 223, 0.8);
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  width: 721px;
+  padding-top: 38px;
+  padding-bottom: 54px;
+}
+main .team .container .team__game__left .team-btn {
+  background: #57B8FF;
+  padding: 16px 31px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #FFF;
+  border: 1px solid #FFF;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+main .team .container .team__game__left .team-btn:hover {
+  background: #f1aeed;
+}
+main .team .container .team__game__right img {
+  width: 492px;
+  height: 550px;
+}
+main .Own__Character {
+  background: #2A313C;
+}
+main .Own__Character .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 128px;
+}
+main .Own__Character .container .Own__Character__left img {
+  width: 596px;
+  height: auto;
+}
+main .Own__Character .container .Own__Character__right .Own__Character__fire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 8px;
+}
+main .Own__Character .container .Own__Character__right .Own__Character__fire .future svg {
+  width: 32px;
+  height: 32px;
+}
+main .Own__Character .container .Own__Character__right .Own__Character__fire h5 {
+  color: #57B8FF;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+main .Own__Character .container .Own__Character__right h1 {
+  color: #FFF;
+  font-size: 64px;
+  line-height: 74px;
+  font-weight: 400;
+  padding-top: 11px;
+  padding-bottom: 38px;
+}
+main .Own__Character .container .Own__Character__right p {
+  color: rgba(223, 223, 223, 0.8);
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  width: 561px;
+  padding-bottom: 54px;
+}
+main .Own__Character .container .Own__Character__right .Own__Character__pubji__games {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .Own__Character .container .Own__Character__right .Own__Character__pubji__games .images__game {
+  border-radius: 20px;
+  background: #3B3D46;
+  width: 196px;
+  height: 125px;
+  position: relative;
+}
+main .Own__Character .container .Own__Character__right .Own__Character__pubji__games .images__game img {
+  width: 174px;
+  height: 103px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+main .Own__Character .container .Own__Character__right .Own__Character__pubji__games .images__game span {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background: #57B8FF;
+  bottom: 40px;
+}
+main .Own__Character .container .Own__Character__right .Own__Character__pubji__games .images__pubji img {
+  width: 174px;
+  height: 102px;
+}
+main .Own__Character .container .Own__Character__right .Own__Character__pubji__games .images__two {
+  position: relative;
+}
+main .Own__Character .container .Own__Character__right .Own__Character__pubji__games .images__two img {
+  width: 174px;
+  height: 102px;
+}
+main .Own__Character .container .Own__Character__right .Own__Character__pubji__games .images__two span {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background: #57B8FF;
+  bottom: 40px;
+  left: 130px;
+}
+main .open__world {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .open__world .multiplayer {
+  width: 33.3333333333%;
+  height: 732px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.326)), to(rgba(0, 0, 0, 0.326))), url("../img/girl__game.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0.326)), url("../img/girl__game.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  cursor: pointer;
+}
+main .open__world .multiplayer img {
+  display: none;
+}
+main .open__world .multiplayer h3 {
+  display: none;
+}
+main .open__world .multiplayer:nth-child(2) {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.326)), to(rgba(0, 0, 0, 0.326))), url("../img/girl__team__game.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0.326)), url("../img/girl__team__game.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main .open__world .multiplayer:nth-child(3) {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.326)), to(rgba(0, 0, 0, 0.326))), url("../img/world.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0.326)), url("../img/world.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main .open__world .multiplayer:hover img {
+  display: block;
+  width: 128px;
+  height: 128px;
+}
+main .open__world .multiplayer:hover h3 {
+  display: block;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 400;
+  color: #FFF;
+}
+main .shop {
+  background: #000;
+}
+main .shop .container {
+  padding-top: 130px;
+}
+main .shop .container .team__game__fire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 8px;
+}
+main .shop .container .team__game__fire .future svg {
+  width: 32px;
+  height: 32px;
+}
+main .shop .container .team__game__fire h5 {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #57B8FF;
+}
+main .shop .container .shop__list {
+  margin-top: 12px;
+  margin-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+main .shop .container .shop__list h2 {
+  color: #FFF;
+  font-size: 64px;
+  line-height: 74px;
+  font-weight: 400;
+  width: 536px;
+}
+main .shop .container .shop__list .shop-btn {
+  background: #57B8FF;
+  padding: 16px 31px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #FFF;
+  border: 1px solid #FFF;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+main .shop .container .shop__list .shop-btn:hover {
+  background: #f1aeed;
+}
+main .shop .container .shop__games {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 130px;
+}
+main .shop .container .shop__games .shopping__box__left a img {
+  width: 648px;
+  height: 510px;
+}
+main .shop .container .shop__games .shopping__box__left p {
+  color: #57B8FF;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  padding-top: 54px;
+}
+main .shop .container .shop__games .shopping__box__left h4 {
+  color: #FFF;
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 400;
+  width: 607px;
+  padding-top: 28px;
+}
+main .shop .container .shop__games .shopping__box__right {
+  gap: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main .shop .container .shop__games .shopping__box__right .shopping__box a img {
+  width: 312px;
+  height: 189px;
+}
+main .shop .container .shop__games .shopping__box__right .shopping__box p {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #57B8FF;
+  padding-top: 30px;
+}
+main .shop .container .shop__games .shopping__box__right .shopping__box h5 {
+  color: #FFF;
+  font-size: 23px;
+  line-height: 34px;
+  font-weight: 400;
+  width: 281px;
+  padding-top: 20px;
+  padding-bottom: 38px;
+}
+main .pages {
+  background-image: url("../img/pages.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 683px;
+}
+main .pages .gaming__community {
+  position: relative;
+  padding-top: 126px;
+}
+main .pages .gaming__community h2 {
+  color: #141820;
+  font-size: 72px;
+  line-height: 82px;
+  font-weight: 400;
+  width: 746px;
+  margin: 0 auto;
+  text-align: center;
+}
+main .pages .gaming__community span {
+  position: absolute;
+  top: 78%;
+  bottom: 20%;
+  right: 10%;
+  left: 40%;
+}
+main .pages .gaming__community span svg {
+  width: 434px;
+}
+main .pages p {
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #555;
+  text-align: center;
+  width: 757px;
+  margin: 0 auto;
+  padding-top: 35px;
+}
+main .pages label {
+  position: relative;
+  top: 8%;
+  left: 30%;
+}
+main .pages label input {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #CCC;
+  color: #555;
+  width: 400px;
+  height: 70px;
+  background: #FFF;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  padding-left: 15px;
+}
+main .pages label .pages-btn {
+  position: absolute;
+  left: 400px;
+  top: 4px;
+  white-space: nowrap;
+  background: #57B8FF;
+  padding: 16px 31px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #FFF;
+  border: 1px solid #FFF;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+main .pages label .pages-btn:hover {
+  background: #f1aeed;
+}
+
+footer .contact {
+  background: #222730;
+}
+footer .contact .container .contact__top {
+  padding-top: 129px;
+  margin-bottom: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+footer .contact .container .contact__top .contact__left .footer__icons {
+  width: 170px;
+  height: 48px;
+}
+footer .contact .container .contact__top .contact__left p {
+  color: #999;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  width: 289px;
+  padding-top: 35px;
+}
+footer .contact .container .contact__top .menu__items h3 {
+  color: #FFF;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  padding-bottom: 23px;
+}
+footer .contact .container .contact__top .menu__items li a {
+  color: #999;
+  font-size: 15px;
+  line-height: 37px;
+  font-weight: 400;
+}
+footer .contact .container .contact__top .other__pages h3 {
+  color: #FFF;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  padding-bottom: 23px;
+}
+footer .contact .container .contact__top .other__pages li a {
+  color: #999;
+  font-size: 15px;
+  line-height: 37px;
+  font-weight: 400;
+}
+footer .contact .container .contact__top .social__icons h3 {
+  color: #FFF;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+footer .contact .container .contact__top .social__icons .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+}
+footer .contact .container .contact__top .social__icons .icons .icon svg {
+  width: 48px;
+  height: 48px;
+}
+footer .contact .container .contact__bottom {
+  padding-bottom: 61px;
+}
+footer .contact .container .contact__bottom .line {
+  width: 1320px;
+  width: 100%;
+  border: 1px solid #3E3E3E;
+  margin-bottom: 48px;
+}
+footer .contact .container .contact__bottom p {
+  color: #898989;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 1552px) {
+  .nav__bottom__list {
+    display: none !important;
+  }
+}
+@media (max-width: 1290px) {
+  .container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  header .navbar .container .nav__top {
+    white-space: nowrap;
+  }
+  header .navbar .container .nav__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    gap: 70px;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left__btn {
+    position: absolute;
+    top: 85%;
+    left: 30%;
+  }
+  main .about .container .sponsors span {
+    display: none;
+  }
+  main .about .container .about__cards {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .about .container .about__cards a {
+    margin-right: 0 !important;
+  }
+  main .about .container .about__cards a:nth-child(6) {
+    display: none;
+  }
+  main .team .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  main .team .container .team__game__left .team-btn {
+    position: absolute;
+    bottom: 4%;
+    left: 40%;
+  }
+  main .Own__Character .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 90px;
+  }
+  main .Own__Character .container .Own__Character__right .Own__Character__fire {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    margin-top: 60px;
+  }
+  main .Own__Character .container .Own__Character__right h1 {
+    text-align: center;
+  }
+  main .Own__Character .container .Own__Character__right p {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  main .Own__Character .container .Own__Character__right .Own__Character__pubji__games {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
+  }
+  main .Own__Character .container .Own__Character__left {
+    margin-bottom: 100px;
+  }
+  main .shop .container .shop__games {
+    gap: 80px;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  main .shop .container .shop__games .shopping__box:nth-child(2) {
+    display: none;
+  }
+}
+@media (max-width: 1147px) {
+  .nav__logo {
+    margin-right: 0 !important;
+  }
+  .pages label {
+    left: 20% !important;
+  }
+}
+@media (max-width: 945px) {
+  .container {
+    max-width: 830px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  header .navbar {
+    background: -webkit-gradient(linear, left top, right top, from(#000), color-stop(53%, #57B8FF));
+    background: linear-gradient(to right, #000 0% 53%, #57B8FF 53% 100%);
+  }
+  header .navbar .container .nav__top .nav__menu {
+    display: none;
+  }
+  header .navbar .container .nav__top .nav__right .nav__top__btn {
+    display: none;
+  }
+  header .navbar .container .nav__top .nav__right .shopping {
+    display: none;
+  }
+  header .navbar .container .nav__top .nav__right .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 7px;
+  }
+  header .navbar .container .nav__top .nav__right .hamburger span {
+    width: 30px;
+    height: 3px;
+    background: #FFF;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__btn {
+    left: 27%;
+  }
+  main .about .container .about__cards {
+    gap: 15px;
+  }
+  main .about .container .about__cards img:nth-child(1) {
+    display: none;
+  }
+  main .shop .container .shop__games .shopping__box__right .shopping__box:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .pages label {
+    left: 15%;
+  }
+  footer .contact .container .contact__top {
+    width: 100% !important;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    gap: 30px;
+  }
+}
+@media (max-width: 798px) {
+  .container {
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left .fire {
+    margin-left: 55px;
+    width: 250px;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__box {
+    width: 500px;
+    font-size: 25px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__box span {
+    display: none;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left p {
+    width: 500px;
+    text-align: center;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__btn {
+    left: 21%;
+  }
+  main .about .container .about__cards {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    gap: 15px !important;
+  }
+  main .about .container .about__cards img:nth-child(1) {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  main .about .container .about__cards img:nth-child(6) {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  main .game__play .container h1 {
+    font-size: 50px;
+    text-align: center;
+    width: 550px;
+  }
+  main .game__play .container p {
+    font-size: 15px;
+    width: 600px;
+  }
+  main .team .container .team__game__left .team__game__fire {
+    margin-left: 40px;
+  }
+  main .team .container .team__game__left h1 {
+    font-size: 50px;
+    text-align: center;
+    width: 550px;
+  }
+  main .team .container .team__game__left p {
+    font-size: 15px;
+    width: 600px;
+  }
+  main .open__world {
+    width: 100%;
+  }
+  main .open__world .multiplayer {
+    width: 50%;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  main .open__world .multiplayer:nth-child(3) {
+    display: none;
+  }
+  main .shop .container .shop__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  main .shop .container .shop__list .shop-btn {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  main .shop .container .shop__games .shopping__box__left p {
+    padding-left: 25px;
+  }
+  main .shop .container .shop__games .shopping__box__left h4 {
+    font-size: 30px;
+    width: 500px;
+    margin: 0 auto;
+  }
+  main .pages .gaming__community h2 {
+    font-size: 60px;
+    width: 650px;
+  }
+  main .pages .gaming__community span {
+    display: none;
+  }
+  main .pages p {
+    font-size: 14px;
+    width: 600px;
+  }
+  main .pages label {
+    left: 20%;
+  }
+  main .pages label input {
+    width: 300px;
+  }
+  main .pages label .pages-btn {
+    left: 300px;
+  }
+}
+@media (max-width: 647px) {
+  .container {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__right img {
+    width: 100%;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__btn {
+    left: 15%;
+  }
+  main .about p {
+    width: 500px !important;
+    width: 100% !important;
+  }
+  main .game__play .container h1 {
+    width: 100% !important;
+  }
+  main .game__play .container p {
+    width: 100% !important;
+  }
+  main .team .container .team__game__left {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  main .team .container .team__game__left .team__game__fire {
+    margin-left: 0;
+  }
+  main .team .container .team__game__left p {
+    width: 100%;
+    padding-left: 20px;
+  }
+  main .Own__Character .container .Own__Character__left img {
+    width: 100% !important;
+  }
+  main .Own__Character .container .Own__Character__right p {
+    width: 100% !important;
+  }
+  main .shop .container .shop__list h2 {
+    width: 100%;
+  }
+  main .shop .container .shop__games .shopping__box__left img {
+    width: 100%;
+    width: 500px !important;
+  }
+  main .pages .gaming__community h2 {
+    width: 100%;
+    font-size: 50px;
+  }
+  main .pages p {
+    width: 100%;
+  }
+  main .pages label {
+    left: 5% !important;
+  }
+  footer .contact .container .contact__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    text-align: center;
+  }
+}
+@media (max-width: 570px) {
+  header .navbar .container .nav__bottom {
+    padding-bottom: 100px !important;
+  }
+  main .pages label {
+    left: 25% !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  main .pages label input {
+    width: 100% !important;
+    width: 250px !important;
+  }
+  main .pages label .pages-btn {
+    left: 20px !important;
+    top: 80px !important;
+  }
+}
+@media (max-width: 552px) {
+  .container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  header .navbar .container .nav__bottom {
+    margin-top: 0;
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__box h1 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left p {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    width: 400px;
+    margin: 0 auto;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__btn {
+    left: 7%;
+    white-space: nowrap;
+  }
+  main .team .container .team__game__left h1 {
+    font-size: 37px;
+    line-height: 50px;
+    width: 400px;
+    margin: 0 auto;
+  }
+  main .team .container .team__game__left p {
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+  }
+  main .team .container .team__game__left .team-btn {
+    left: 30%;
+  }
+  main .team .container .team__game__right img {
+    width: 400px;
+    height: 500px;
+  }
+  main .Own__Character .container .Own__Character__right p {
+    width: 400px !important;
+    margin: 0 auto !important;
+  }
+  main .Own__Character .container .Own__Character__right .Own__Character__pubji__games .images__pubji {
+    display: none;
+  }
+  main .shop .container .shop__list h2 {
+    text-align: center !important;
+    font-size: 50px !important;
+  }
+  main .shop .container .shop__games {
+    margin-bottom: 0;
+  }
+  main .shop .container .shop__games .shopping__box__left h4 {
+    width: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  header .navbar {
+    background: -webkit-gradient(linear, left top, right top, to(#000)) !important;
+    background: linear-gradient(to right, #000 100%) !important;
+  }
+  header .navbar .container .nav__bottom {
+    padding-bottom: 170px !important;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left {
+    width: 100%;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__box {
+    width: 100%;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left p {
+    width: 100%;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__btn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 20%;
+    top: 77%;
+    gap: 30px;
+  }
+  main .about .container {
+    padding-top: 130px !important;
+  }
+  main .game__play .container .game__play__cards .game__play__card {
+    height: auto;
+  }
+  main .game__play .container .game__play__cards .game__play__card p {
+    padding: 10px;
+  }
+  main .team .container .team__game__left {
+    width: 100% !important;
+  }
+  main .team .container .team__game__left .team__game__fire {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .team .container .team__game__left h1 {
+    width: 100% !important;
+  }
+  main .team .container .team__game__left p {
+    width: 100% !important;
+  }
+  main .team .container .team__game__left .team-btn {
+    left: 25%;
+    bottom: 3%;
+  }
+  main .team .container .team__game__right {
+    width: 100%;
+  }
+  main .team .container .team__game__right img {
+    width: 100%;
+    height: auto;
+  }
+  main .Own__Character .container {
+    gap: 60px;
+  }
+  main .Own__Character .container .Own__Character__right {
+    width: 100%;
+  }
+  main .Own__Character .container .Own__Character__right h1 {
+    font-size: 50px;
+    line-height: 65px;
+  }
+  main .Own__Character .container .Own__Character__right p {
+    width: 100% !important;
+  }
+  main .Own__Character .container .Own__Character__right .Own__Character__pubji__games {
+    padding: 20px 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
+  main .Own__Character .container .Own__Character__right .Own__Character__pubji__games .images__pubji {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .open__world .multiplayer:nth-child(1) {
+    width: 100% !important;
+  }
+  main .open__world .multiplayer:nth-child(2) {
+    display: none;
+  }
+  main .shop .container .team__game__fire {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .shop .container .shop__list .shop-btn {
+    margin-top: 50px;
+  }
+  main .shop .container .shop__games {
+    padding-bottom: 100px !important;
+  }
+  main .shop .container .shop__games .shopping__box__left {
+    width: 100% !important;
+  }
+  main .shop .container .shop__games .shopping__box__left img {
+    width: 100% !important;
+    width: 327px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+  main .shop .container .shop__games .shopping__box__left h4 {
+    width: 100% !important;
+  }
+  main .pages .gaming__community {
+    padding-top: 80px;
+  }
+  main .pages .gaming__community h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  main .pages p {
+    width: 340px;
+    margin: 0 auto;
+  }
+  main .pages label {
+    left: 23% !important;
+  }
+  footer .contact .container .contact__top {
+    padding-top: 80px;
+  }
+  footer .contact .container .contact__bottom {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 350px) {
+  .container {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  header .navbar .container .nav__bottom {
+    padding-top: 60px;
+    gap: 40px;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left .fire {
+    margin-left: 0;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__box h1 {
+    font-size: 21px;
+    line-height: 37px;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left p {
+    font-size: 13px;
+    line-height: 25px;
+    padding-top: 27px;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__left .nav__bottom__left__btn {
+    left: 10%;
+    bottom: 10%;
+    top: 95%;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__right {
+    width: 100%;
+    margin: 0 auto;
+  }
+  header .navbar .container .nav__bottom .nav__bottom__right img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .about .container {
+    padding-top: 160px !important;
+    padding-bottom: 80px;
+  }
+  main .about .container .sponsors h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  main .about .container p {
+    font-size: 13px;
+    line-height: 20px;
+    padding-top: 20px;
+  }
+  main .game__play .container {
+    padding-top: 80px;
+  }
+  main .game__play .container .esports .game__fire {
+    white-space: nowrap !important;
+  }
+  main .game__play .container h1 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  main .game__play .container p {
+    font-size: 13px;
+    padding-top: 20px;
+  }
+  main .game__play .container .game__play__cards {
+    padding-bottom: 60px;
+  }
+  main .game__play .container .game__play__cards .game__play__card .game__box h3 {
+    font-size: 27px;
+    line-height: 35px;
+  }
+  main .game__play .container .game__play__cards .game__play__card p {
+    font-size: 15px;
+    line-height: 28px;
+    padding: 15px;
+    text-align: center;
+  }
+  main .team .container {
+    padding: 90px 0;
+  }
+  main .team .container .team__game__left .team__game__fire {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  main .team .container .team__game__left h1 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  main .team .container .team__game__left p {
+    padding-left: 0;
+    font-size: 13px;
+    line-height: 23px;
+    padding-top: 27px;
+    padding-bottom: 35px;
+  }
+  main .team .container .team__game__left .team-btn {
+    left: 15%;
+    bottom: 2%;
+  }
+  main .Own__Character .container .Own__Character__right h1 {
+    font-size: 37px;
+    line-height: 50px;
+  }
+  main .Own__Character .container .Own__Character__right p {
+    padding-bottom: 30px;
+  }
+  main .Own__Character .container .Own__Character__left {
+    margin-bottom: 60px;
+  }
+  main .open__world .multiplayer {
+    width: 100% !important;
+    height: 100vh;
+    background-size: cover;
+  }
+  main .shop .container {
+    padding-top: 80px;
+  }
+  main .shop .container .shop__list h2 {
+    font-size: 30px !important;
+    line-height: 50px !important;
+  }
+  main .shop .container .shop__list .shop-btn {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  main .shop .container .shop__games {
+    gap: 50px;
+    padding-bottom: 50px !important;
+  }
+  main .shop .container .shop__games .shopping__box__left img {
+    width: 260px !important;
+  }
+  main .shop .container .shop__games .shopping__box__left h4 {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+  main .shop .container .shop__games .shopping__box__left p {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+  main .shop .container .shop__games .shopping__box__right {
+    width: 100%;
+  }
+  main .shop .container .shop__games .shopping__box__right .shopping__box {
+    width: 100% !important;
+  }
+  main .shop .container .shop__games .shopping__box__right .shopping__box img {
+    width: 260px !important;
+    margin: 0 auto !important;
+  }
+  main .shop .container .shop__games .shopping__box__right .shopping__box h5 {
+    width: 100%;
+    font-size: 22px;
+    padding-bottom: 20px;
+  }
+  main .pages .gaming__community {
+    padding-top: 60px;
+  }
+  main .pages .gaming__community h2 {
+    font-size: 20px !important;
+    line-height: 35px !important;
+  }
+  main .pages p {
+    width: 270px !important;
+  }
+  main .pages label {
+    left: 10% !important;
+  }
+  footer .contact .container .contact__top {
+    width: 100% !important;
+    padding-top: 50px;
+  }
+  footer .contact .container .contact__top .contact__left {
+    width: 100% !important;
+  }
+  footer .contact .container .contact__top .contact__left p {
+    width: 100% !important;
+  }
+  footer .contact .container .contact__top .social__icons .icons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .contact .container .contact__top .social__icons .icons .icon svg {
+    width: 35px;
+    height: 35px;
+  }
+}/*# sourceMappingURL=main.min.css.map */

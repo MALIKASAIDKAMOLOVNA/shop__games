@@ -1,0 +1,25 @@
+@mixin tayyorflex(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin button(){
+    background: $green;
+    padding: 16px 31px;
+    @include font(18,28,400);
+    text-transform: capitalize;
+    color: $white;
+    border: 1px solid $white;
+    transition: 0.3s ease all;
+    &:hover{
+        background: #f1aeed;
+    }
+}
+@mixin text(){
+    color: $white;
+    @include font(64,74,400);
+}
+@mixin list(){
+    color: rgba(223, 223, 223, 0.80);
+    @include font(20,32,400);
+}

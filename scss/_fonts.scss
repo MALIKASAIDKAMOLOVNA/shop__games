@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron-Regular.ttf');
+    font-style: normal;
+}
+
+@mixin font($fs, $lh, $fw){
+    font-size: $fs + px;
+    line-height: $lh + px;
+    font-weight: $fw;
+}

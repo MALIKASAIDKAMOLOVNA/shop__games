@@ -1,0 +1,759 @@
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: relative;
+    .navbar{
+        background: linear-gradient(to right, #000 0% 60%, $green 60% 100%);
+        .container{
+            .nav__top{
+                @include tayyorflex();
+                padding: 20px 0;
+                .nav__logo{
+                    margin-right: 177px;
+                    svg{
+                        width: 170px;
+                        height: 48px;
+                    }
+                }
+                .nav__menu{
+                    @include tayyorflex();
+                    gap: 60px;
+                    transition: 0.5s;
+                    li{
+                        a{
+                            @include font(16,26,400);
+                            color: $white;
+                            &:hover{
+                                padding-bottom: 5px;
+                                border-bottom: 2px solid $white;
+                                width: 45px;
+                                color: $gold;
+                            }
+                            &:active{
+                                opacity: .5;
+                            }
+                        }
+                        .active{
+                            color: $gold;
+                        }
+                    }
+                }
+                .nav__right{
+                    @include tayyorflex();
+                    justify-content: center;
+                    gap: 30px;
+                    .shopping{
+                        position: relative;
+                        .shop{
+                            width: 32px;
+                            height: 32px;
+                            transition: 0.5s;
+                            &:hover{
+                                path{
+                                    fill: #e435e1;
+                                }
+                            }
+                            &:active{
+                                opacity: .5;
+                            }
+                        }
+                        span{
+                            position: absolute;
+                            top: -9px;
+                            right: -20px;
+                            svg{
+                                width: 21px;
+                                height: 18px;
+                            }
+                        }
+                    }
+                    .nav__top__btn{
+                        @include button();
+                    }
+                }
+            }
+            .nav__bottom{
+                padding-top: 209px;
+                padding-bottom: 250px;
+                @include tayyorflex();
+                .nav__bottom__list{
+                    position: absolute;
+                    @include tayyorflex();
+                    transform: rotate(-90deg);
+                    left: -70px;
+                    top: 80px;
+                    bottom: 0;
+                    gap: 50px;
+                    li{
+                        a{
+                            @include font(10,25,400);
+                            color: #80858F;
+                        }
+                    }
+                }
+                .nav__bottom__left{
+                    .fire{
+                        @include tayyorflex();
+                        justify-content: start;
+                        gap: 8px;
+                        svg{
+                            width: 32px;
+                            height: 32px;
+                        }
+                        h4{
+                            color: $green;
+                            @include font(16,16,400);
+                        }
+                    }
+                    .nav__bottom__left__box{
+                        position: relative;
+                        color: #FFF;
+                        font-size: 35px;
+                        font-weight: 400;
+                        line-height: 80px;
+                        width: 650px;
+                        text-transform: capitalize;
+                        span{
+                            position: absolute;
+                            top: -5px;
+                            left: -20px;
+                        }
+                    }
+                    p{
+                        @include font(18,28,400);
+                        color: #999;
+                        padding-top: 45px;
+                        width: 615px;
+                    }
+                    .nav__bottom__left__btn{
+                        @include tayyorflex();
+                        justify-content: start;
+                        gap: 40px;
+                        margin-top: 53px;
+                        .site-btn{
+                            @include button();
+                        }
+                        .main-btn{
+                            @include font(18,28,400);
+                            color: $white;
+                            transition: 0.5s;
+                            &:hover{
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+                .nav__bottom__right{
+                    margin-right: 28px;
+                }
+            }
+        }
+    }
+}
+main{
+    .about{
+        background: $orange;
+        .container{
+            padding-top: 128px;
+            padding-bottom: 130px;
+            .sponsors{
+                position: relative;
+                h3{
+                    text-align: center;
+                    @include font(48,58,400);
+                    color: $black;
+                }
+                span{
+                    position: absolute;
+                    top: 0;
+                    right: 470px;
+                    svg{
+                        width: 374px;
+                    }
+                }
+            }
+            p{
+                @include font(16,26,400);
+                text-align: center;
+                padding-top: 30px;
+                width: 576px;
+                margin: 0 auto;
+            }
+            .about__cards{
+                margin-top: 40px;
+                a{
+                    img{
+                        width: 193px;
+                        height: 89px;
+                    }
+                }
+                a:not(:last-child){
+                    margin-right: 27px;
+                }
+            }
+        }
+    }
+    .game__play{
+        background-image: url('../img/new__game__bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        .container{
+            padding-top: 130px;
+            .esports{
+                @include tayyorflex();
+                justify-content: center;
+                gap: 8px;
+                .game__fire{
+                    svg{
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+                h5{
+                    @include font(16,16,400);
+                    color: $green;
+                }
+            }
+            h1{
+                @include text();
+                text-align: center;
+                width: 716px;
+                margin: 0 auto;
+                padding-top: 11px;
+            }
+            p{
+                @include list();
+                text-align: center;
+                width: 698px;
+                margin: 0 auto;
+                padding-top: 39px;
+            }
+            .game__play__cards{
+                margin-top: 64px;
+                padding-bottom: 130px;
+                gap: 32px;
+                @include tayyorflex();
+                justify-content: center;
+                flex-wrap: wrap;
+                .game__play__card{
+                    border-radius: 20px;
+                    background: rgba(255, 255, 255, 0.15);
+                    width: 586px;
+                    height: 212px;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    .game__box{
+                        @include tayyorflex();
+                        justify-content: start;
+                        margin-left: 35px;
+                        padding-top: 35px;
+                        gap: 16px;
+                        span{
+                            svg{
+                                width: 29px;
+                                height: 29px;
+                            }
+                        }
+                        h3{
+                            @include font(32,42,400);
+                            color: $white;
+                        }
+                    }
+                    p{
+                        @include font(18,28,400);
+                        color: rgba(223, 223, 223, 0.80);
+                        width: 470px;
+                        text-align: start;
+                        padding-left: 20px;
+                        padding-top: 19px;
+                    }
+                    &:hover{
+                        background: rgb(10, 10, 93);
+                        transform: scale(1.1, 1.1);
+                    }
+                }
+            }
+        }
+    }
+    .team{
+        background: #000;
+        .container{
+            @include tayyorflex();
+            padding: 130px 0;
+            .team__game__left{
+                .team__game__fire{
+                    @include tayyorflex();
+                    justify-content: start;
+                    gap: 8px;
+                    .future{
+                        svg{
+                            width: 32px;
+                            height: 32px;
+                        }
+                    }
+                    h5{
+                        color: $green;
+                        @include font(16,16,400);
+                    }
+                }
+                h1{
+                    @include text();
+                    width: 684px;
+                    padding-top: 22px;
+                }
+                p{
+                    @include list();
+                    width: 721px;
+                    padding-top: 38px;
+                    padding-bottom: 54px;
+                }
+                .team-btn{
+                    @include button();
+                }
+            }
+            .team__game__right{
+                img{
+                    width: 492px;
+                    height: 550px;
+                }
+            }
+        }
+    }
+    .Own__Character{
+        background: #2A313C;
+        .container{
+            @include tayyorflex();
+            gap: 128px;
+            .Own__Character__left{
+                img{
+                    width: 596px;
+                    height: auto;
+                }
+            }
+            .Own__Character__right{
+                .Own__Character__fire{
+                    @include tayyorflex();
+                    justify-content: start;
+                    gap: 8px;
+                    .future{
+                        svg{
+                            width: 32px;
+                            height: 32px;
+                        }
+                    }
+                    h5{
+                        color: $green;
+                        @include font(16,16,400);
+                    }
+                }
+                h1{
+                    @include text();
+                    padding-top: 11px;
+                    padding-bottom: 38px;
+                }
+                p{
+                    @include list();
+                    width: 561px;
+                    padding-bottom: 54px;
+                }
+                .Own__Character__pubji__games{
+                    @include tayyorflex();
+                    .images__game{
+                        border-radius: 20px;
+                        background: #3B3D46;
+                        width: 196px;
+                        height: 125px;
+                        position: relative;
+                        img{
+                            width: 174px;
+                            height: 103px;
+                            position: absolute;
+                            bottom: 10px;
+                            left: 10px;
+                        }
+                        span{
+                            position: absolute;
+                            width: 44px;
+                            height: 44px;
+                            background: $green;
+                            bottom: 40px;
+                        }
+                    }
+                    .images__pubji{
+                        img{
+                            width: 174px;
+                            height: 102px;
+                        }
+                    }
+                    .images__two{
+                        position: relative;
+                        img{
+                            width: 174px;
+                            height: 102px;
+                        }
+                        span{
+                            position: absolute;
+                            width: 44px;
+                            height: 44px;
+                            background: $green;
+                            bottom: 40px;
+                            left: 130px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .open__world{
+        width: 100%;
+        @include tayyorflex();
+        .multiplayer{
+            width: calc(100%/3);
+            height: 732px;
+            @include tayyorflex();
+            justify-content: center;
+            flex-direction: column;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0.326)), url('../img/girl__game.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            transition: 0.8s;
+            cursor: pointer;
+            img{
+                display: none;
+            }
+            h3{
+                display: none;
+            }
+            &:nth-child(2){
+                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0.326)), url('../img/girl__team__game.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            &:nth-child(3){
+                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0.326)), url('../img/world.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            &:hover{
+                img{
+                    display: block;
+                    width: 128px;
+                    height: 128px;
+                }
+                h3{
+                    display: block;
+                    @include font(48,58,400);
+                    color: $white;
+
+                }
+            }
+        }
+    }
+    .shop{
+        background: #000;
+        .container{
+            padding-top: 130px;
+            .team__game__fire{
+                @include tayyorflex();
+                justify-content: start;
+                gap: 8px;
+                .future{
+                    svg{
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+                h5{
+                    @include font(16,16,400);
+                    color: $green;
+                }
+            }
+            .shop__list{
+                margin-top: 12px;
+                margin-bottom: 64px;
+                @include tayyorflex();
+                align-items: end;
+                h2{
+                    @include text();
+                    width: 536px;
+                }
+                .shop-btn{
+                    @include button();
+                }
+            }
+            .shop__games{
+                @include tayyorflex();
+                justify-content: space-evenly;
+                padding-bottom: 130px;
+                .shopping__box__left{
+                    a{
+                        img{
+                            width: 648px;
+                            height: 510px;
+                        }
+                    }
+                    p{
+                        color: $green;
+                        @include font(18,18,400);
+                        padding-top: 54px;
+                    }
+                    h4{
+                        color: $white;
+                        @include font(36,46,400);
+                        width: 607px;
+                        padding-top: 28px;
+                    }
+                }
+                .shopping__box__right{
+                    gap: 24px;
+                    @include tayyorflex();
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    .shopping__box{
+                        a{
+                            img{
+                                width: 312px;
+                                height: 189px;
+                            }
+                        }
+                        p{
+                            @include font(16,16,400);
+                            color: $green;
+                            padding-top: 30px;
+                        }
+                        h5{
+                            color: $white;
+                            @include font(23,34,400);
+                            width: 281px;
+                            padding-top: 20px;
+                            padding-bottom: 38px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pages{
+        background-image: url('../img/pages.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 683px;
+        .gaming__community{
+            position: relative;
+            padding-top: 126px;
+            h2{
+                color: $dark_two;
+                @include font(72,82,400);
+                width: 746px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            span{
+                position: absolute;
+                top: 78%;
+                bottom: 20%;
+                right: 10%;
+                left: 40%;
+                svg{
+                    width: 434px;
+                }
+            }
+        }
+        p{
+            @include font(17,28,400);
+            color: $dark;
+            text-align: center;
+            width: 757px;
+            margin: 0 auto;
+            padding-top: 35px;
+        }
+        label{
+            position: relative;
+            top: 8%;
+            left: 30%;
+            input{
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                border: 1px solid #CCC;
+                color: $dark;
+                width: 400px;
+                height: 70px;
+                background: $white;
+                @include font(18,28,700);
+                outline: none;
+                border: none;
+                padding-left: 15px;
+            }
+            .pages-btn{
+                position: absolute;
+                left: 400px;
+                top: 4px;
+                white-space: nowrap;
+                @include button();
+            }
+        }
+    }
+}
+footer{
+    .contact{
+        background: $black;
+        .container{
+            .contact__top{
+                padding-top: 129px;
+                margin-bottom: 47px;
+                @include tayyorflex();
+                align-items: start;
+                .contact__left{
+                    .footer__icons{
+                        width: 170px;
+                        height: 48px;
+                    }
+                    p{
+                        color: #999;
+                        @include font(15,25,400);
+                        width: 289px;
+                        padding-top: 35px;
+                    }
+                }
+                .menu__items{
+                    h3{
+                        color: $white;
+                        @include font(18,30,400);
+                        padding-bottom: 23px;
+                    }
+                    li{
+                        a{
+                            color: #999;
+                            @include font(15,37,400);
+                        }
+                    }
+                }
+                .other__pages{
+                    h3{
+                        color: $white;
+                        @include font(18,30,400);
+                        padding-bottom: 23px;
+                    }
+                    li{
+                        a{
+                            color: #999;
+                            @include font(15,37,400);
+                        }
+                    }
+                }
+                .social__icons{
+                    h3{
+                        color: $white;
+                        @include font(18,30,400);
+                        margin-bottom: 24px;
+                    }
+                    .icons{
+                        @include tayyorflex();
+                        justify-content: center;
+                        gap: 16px;
+                        .icon{
+                            svg{
+                                width: 48px;
+                                height: 48px;
+                            }
+                        }
+                    }
+                }
+            }
+            .contact__bottom{
+                padding-bottom: 61px;
+                .line{
+                    width: 1320px;
+                    width: 100%;
+                    border: 1px solid #3E3E3E;
+                    margin-bottom: 48px;
+                }
+                p{
+                    color: #898989;
+                    @include font(14,18,400);
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// a{
+//     svg{
+//         path{
+//             fill: red
+//         }
+//     }
+// }

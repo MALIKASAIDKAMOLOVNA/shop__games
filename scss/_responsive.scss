@@ -1,0 +1,988 @@
+@media(max-width: 1552px){
+    .nav__bottom__list{
+        display: none !important;
+    }
+}
+@media(max-width: 1290px){
+    .container{
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    header{
+        .navbar{
+            .container{
+                .nav__top{
+                    white-space: nowrap;
+                }
+                .nav__bottom{
+                    flex-direction: column;
+                    position: relative;
+                    gap: 70px;
+                    .nav__bottom__left__btn{
+                        position: absolute;
+                        top: 85%;
+                        left: 30%;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .about{
+            .container{
+                .sponsors{
+                    span{
+                        display: none;
+                    }
+                }
+                .about__cards{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    a{
+                        margin-right: 0 !important;
+                    }
+                    a:nth-child(6){
+                        display: none;
+                    }
+                }
+            }
+        }
+        .team{
+            .container{
+                flex-direction: column;
+                position: relative;
+                .team__game__left{
+                    .team-btn{
+                        position: absolute;
+                        bottom: 4%;
+                        left: 40%;
+                    }
+                }
+            }
+        }
+        .Own__Character{
+            .container{
+                flex-direction: column-reverse;
+                gap: 90px;
+                .Own__Character__right{
+                    .Own__Character__fire{
+                        display: flex !important;
+                        justify-content: center !important;
+                        margin-top: 60px;
+                    }
+                    h1{
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                        margin: 0 auto;
+                        width: 100%;
+                    }
+                    .Own__Character__pubji__games{
+                        display: flex !important;
+                        justify-content: space-evenly !important;
+                    }
+                }
+                .Own__Character__left{
+                    margin-bottom: 100px;
+                }
+            }
+        }
+        .shop{
+            .container{
+                .shop__games{
+                    gap: 80px;
+                    flex-direction: column !important;
+                    .shopping__box:nth-child(2){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1147px){
+    .nav__logo{
+        margin-right: 0 !important;
+    }
+    .pages{
+        label{
+            left: 20% !important;
+        }
+    }
+}
+@media(max-width: 945px){
+    .container{
+        max-width: 830px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    header{
+        .navbar{
+            background: linear-gradient(to right, #000 0% 53%, $green 53% 100%);
+            .container{
+                .nav__top{
+                    .nav__menu{
+                        display: none;
+                    }
+                    .nav__right{
+                        .nav__top__btn{
+                            display: none;
+                        }
+                        .shopping{
+                            display: none;
+                        }
+                        .hamburger{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 7px;
+                            span{
+                                width: 30px;
+                                height: 3px;
+                                background: $white;
+                            }
+                        }
+                    }
+                }
+                .nav__bottom{
+                    .nav__bottom__left{
+                        .nav__bottom__left__btn{
+                            left: 27%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .about{
+            .container{
+                .about__cards{
+                    gap: 15px;
+                    img:nth-child(1){
+                        display: none;
+                    }
+                }
+            }
+        }
+        .shop{
+            .container{
+                .shop__games{
+                    .shopping__box__right{
+                        .shopping__box:nth-child(2){
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+        .pages{
+            label{
+                left: 15%;
+            }
+        }
+    }
+    footer{
+        .contact{
+            .container{
+                .contact__top{
+                    width: 100% !important;
+                    flex-wrap: wrap !important;
+                    width: fit-content !important;
+                    gap: 30px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 798px){
+    .container{
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    header{
+        .navbar{
+            .container{
+                .nav__bottom{
+                    .nav__bottom__left{
+                        .fire{
+                            margin-left: 55px;
+                            width: 250px;
+                        }
+                        .nav__bottom__left__box{
+                            width: 500px;
+                            font-size: 25px;
+                            margin: 0 auto;
+                            text-align: center;
+                            span{
+                                display: none;
+                            }
+                        }
+                        p{
+                            width: 500px;
+                            text-align: center;
+                        }
+                        .nav__bottom__left__btn{
+                            left: 21%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .about{
+            .container{
+                .about__cards{
+                    flex-wrap: wrap !important;
+                    gap: 15px !important;
+                    img:nth-child(1){
+                        display: flex !important;
+                    }
+                    img:nth-child(6){
+                        display: flex !important;
+                    }
+                }
+            }
+        }
+        .game__play{
+            .container{
+                h1{
+                    font-size: 50px;
+                    text-align: center;
+                    width: 550px;
+                }
+                p{
+                    font-size: 15px;
+                    width: 600px;
+                }
+            }
+        }
+        .team{
+            .container{
+                .team__game__left{
+                    .team__game__fire{
+                        margin-left: 40px;
+                    }
+                    h1{
+                        font-size: 50px;
+                        text-align: center;
+                        width: 550px;
+                    }
+                    p{
+                        font-size: 15px;
+                        width: 600px;
+                    }
+                }
+            }
+        }
+        .open__world{
+            width: 100%;
+            .multiplayer{
+                width: calc(100%/2);
+                flex-wrap: wrap !important;
+                &:nth-child(3){
+                    display: none;
+                }
+            }
+        }
+        .shop{
+            .container{
+                .shop__list{
+                    flex-direction: column;
+                    align-items: start;
+                    .shop-btn{
+                        align-self: flex-end;
+                    }
+                }
+                .shop__games{
+                    .shopping__box__left{
+                        p{
+                            padding-left: 25px;
+                        }
+                        h4{
+                            font-size: 30px;
+                            width: 500px;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+        .pages{
+            .gaming__community{
+                h2{
+                    font-size: 60px;
+                    width: 650px;
+                }
+                span{
+                    display: none;
+                }
+            }
+            p{
+                font-size: 14px;
+                width: 600px;
+            }
+            label{
+                left: 20%;
+                input{
+                    width: 300px;
+                }
+                .pages-btn{
+                    left: 300px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 647px){
+    .container{
+        max-width: 550px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    header{
+        .navbar{
+            .container{
+                .nav__bottom{
+                    .nav__bottom__right{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .nav__bottom__left{
+                        .nav__bottom__left__btn{
+                            left: 15%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .about{
+            p{
+                width: 500px !important;
+                width: 100% !important;
+            }
+        }
+        .game__play{
+            .container{
+                h1{
+                    width: 100% !important;
+                }
+                p{
+                    width: 100% !important;
+                }
+            }
+        }
+        .team{
+            .container{
+                .team__game__left{
+                    width: 100% !important;
+                    margin: 0 auto;
+                    .team__game__fire{
+                        margin-left: 0;
+                    }
+                    p{
+                        width: 100%;
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+        .Own__Character{
+            .container{
+                .Own__Character__left{
+                    img{
+                        width: 100% !important;
+                    }
+                }
+                .Own__Character__right{
+                    p{
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+        .shop{
+            .container{
+                .shop__list{
+                    h2{
+                        width: 100%;
+                    }
+                }
+                .shop__games{
+                    .shopping__box__left{
+                        img{
+                            width: 100%;
+                            width: 500px !important;
+                        }
+                    }
+                }
+            }
+        }
+        .pages{
+            .gaming__community{
+                h2{
+                    width: 100%;
+                    font-size: 50px;
+                }
+            }
+            p{
+                width: 100%;
+            }
+            label{
+                left: 5% !important;
+            }
+        }
+    }
+    footer{
+        .contact{
+            .container{
+                .contact__top{
+                    flex-direction: column;
+                    margin: 0 auto !important;
+                    justify-content: center !important;
+                    align-items: center !important;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 570px){
+    header{
+        .navbar{
+            .container{
+                .nav__bottom{
+                    padding-bottom: 100px !important;
+                }
+            }
+        }
+    }
+    main{
+        .pages{
+            label{
+                left: 25% !important;
+                flex-direction: column !important;
+                input{
+                    width: 100% !important;
+                    width: 250px !important;
+                }
+                .pages-btn{
+                   left: 20px !important;
+                   top: 80px !important;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 552px){
+    .container{
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    header{
+        .navbar{
+            .container{
+                .nav__bottom{
+                    margin-top: 0;
+                    padding-top: 100px;
+                    padding-bottom: 40px;
+                    .nav__bottom__left{
+                        .nav__bottom__left__box{
+                            h1{
+                                font-size: 25px;
+                                font-weight: 400;
+                                line-height: 40px;
+                            }
+                        }
+                        p{
+                            font-size: 16px;
+                            line-height: 28px;
+                            font-weight: 400;
+                            width: 400px;
+                            margin: 0 auto;
+                        }
+                        .nav__bottom__left__btn{
+                            left: 7%;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .team{
+            .container{
+                .team__game__left{
+                    h1{
+                        font-size: 37px;
+                        line-height: 50px;
+                        width: 400px;
+                        margin: 0 auto;
+                    }
+                    p{
+                        text-align: center;
+                        width: 400px;
+                        margin: 0 auto;
+                    }
+                    .team-btn{
+                        left: 30%;
+                    }
+                }
+                .team__game__right{
+                    img{
+                        width: 400px;
+                        height: 500px;
+                    }
+                }
+            }
+        }
+        .Own__Character{
+            .container{
+                .Own__Character__right{
+                    p{
+                        width: 400px !important;
+                        margin: 0 auto !important;
+                    }
+                    .Own__Character__pubji__games{
+                        .images__pubji{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .shop{
+            .container{
+                .shop__list{
+                    h2{
+                        text-align: center !important;
+                        font-size: 50px !important;
+                    }
+                }
+                .shop__games{
+                    margin-bottom: 0;
+                    .shopping__box__left{
+                        h4{
+                            width: 400px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 500px){
+    .container{
+        max-width: 370px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    header{
+        .navbar{
+            background: linear-gradient( to right, #000 100%) !important;
+            .container{
+                .nav__bottom{
+                    padding-bottom: 170px !important;
+                    .nav__bottom__left{
+                        width: 100%;
+                        .nav__bottom__left__box{
+                            width: 100%;
+                        }
+                        p{
+                            width: 100%;
+                        }
+                        .nav__bottom__left__btn{
+                            flex-direction: column;
+                            left: 20%;
+                            top: 77%;
+                            gap: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .about{
+            .container{
+                padding-top: 130px !important;
+            }
+        }
+        .game__play{
+            .container{
+                .game__play__cards{
+                    .game__play__card{
+                        height: auto;
+                        p{
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .team{
+            .container{
+                .team__game__left{
+                    width: 100% !important;
+                    .team__game__fire{
+                        display: flex;
+                        justify-content: center;
+                    }
+                    h1{
+                        width: 100% !important;
+                    }
+                    p{
+                        width: 100% !important;
+                    }
+                    .team-btn{
+                        left: 25%;
+                        bottom: 3%;
+                    }
+                }
+                .team__game__right{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+        .Own__Character{
+            .container{
+                gap: 60px;
+                .Own__Character__right{
+                    width: 100%;
+                    h1{
+                        font-size: 50px;
+                        line-height: 65px;
+                    }
+                    p{
+                        width: 100% !important;
+                    }
+                    .Own__Character__pubji__games{
+                        padding: 20px 0;
+                        flex-wrap: wrap;
+                        gap: 20px;
+                        .images__pubji{
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+        .open__world{
+            .multiplayer:nth-child(1){
+                width: calc(100%) !important;
+            }
+            .multiplayer:nth-child(2){
+                display: none;
+            }
+        }
+        .shop{
+            .container{
+                .team__game__fire{
+                    display: flex;
+                    justify-content: center;
+                }
+                .shop__list{
+                    .shop-btn{
+                        margin-top: 50px;
+                    }
+                }
+                .shop__games{
+                    padding-bottom: 100px !important;
+                    .shopping__box__left{
+                        width: 100% !important;
+                        img{
+                            width: 100% !important;
+                            width: 327px !important;
+                            height: auto !important;
+                            margin: 0 auto !important;
+                        }
+                        h4{
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+        .pages{
+            .gaming__community{
+                padding-top: 80px;
+                h2{
+                    font-size: 30px;
+                    line-height: 50px;
+                }
+            }
+            p{
+                width: 340px;
+                margin: 0 auto;
+            }
+            label{
+                left: 23% !important;
+            }
+        }
+    }
+    footer{
+        .contact{
+            .container{
+                .contact__top{
+                    padding-top: 80px;
+                }
+                .contact__bottom{
+                    padding-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 350px){
+    .container{
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    header{
+        .navbar{
+            .container{
+                .nav__bottom{
+                    padding-top: 60px;
+                    gap: 40px;
+                    .nav__bottom__left{
+                        .fire{
+                            margin-left: 0;
+                        }
+                        .nav__bottom__left__box{
+                            h1{
+                                font-size: 21px;
+                                line-height: 37px;
+                            }
+                        }
+                        p{
+                            font-size: 13px;
+                            line-height: 25px;
+                            padding-top: 27px;
+                        }
+                        .nav__bottom__left__btn{
+                            left: 10%;
+                            bottom: 10%;
+                            top: 95%;
+                        }
+                    }
+                    .nav__bottom__right{
+                        width: 100%;
+                        margin: 0 auto;
+                        img{
+                            width: 100%;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .about{
+            .container{
+                padding-top: 160px !important;
+                padding-bottom: 80px;
+                .sponsors{
+                    h3{
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
+                }
+                p{
+                    font-size: 13px;
+                    line-height: 20px;
+                    padding-top: 20px;
+                }
+            }
+        }
+        .game__play{
+            .container{
+                padding-top: 80px;
+                .esports{
+                    .game__fire{
+                        white-space: nowrap !important;
+                    }
+                }
+                h1{
+                    font-size: 25px;
+                    line-height: 40px;
+                }
+                p{
+                    font-size: 13px;
+                    padding-top: 20px;
+                }
+                .game__play__cards{
+                    padding-bottom: 60px;
+                    .game__play__card{
+                        .game__box{
+                            h3{
+                                font-size: 27px;
+                                line-height: 35px;
+                            }
+                        }
+                        p{
+                            font-size: 15px;
+                            line-height: 28px;
+                            padding: 15px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .team{
+            .container{
+                padding: 90px 0;
+                .team__game__left{
+                    .team__game__fire{
+                        display: flex !important;
+                        justify-content: center !important;
+                    }
+                    h1{
+                        font-size: 25px;
+                        line-height: 35px;
+                    }
+                    p{
+                        padding-left: 0;
+                        font-size: 13px;
+                        line-height: 23px;
+                        padding-top: 27px;
+                        padding-bottom: 35px;
+                    }
+                    .team-btn{
+                        left: 15%;
+                        bottom: 2%;
+                    }
+                }
+            }
+        }
+        .Own__Character{
+            .container{
+                .Own__Character__right{
+                    h1{
+                        font-size: 37px;
+                        line-height: 50px;
+                    }
+                    p{
+                        padding-bottom: 30px;
+                    }
+                }
+                .Own__Character__left{
+                    margin-bottom: 60px;
+                }
+            }
+        }
+        .open__world{
+            .multiplayer{
+                width: 100% !important;
+                height: 100vh;
+                background-size: cover;
+            }
+        }
+        .shop{
+            .container{
+                padding-top: 80px;
+                .shop__list{
+                    h2{
+                        font-size: 30px !important;
+                        line-height: 50px !important;
+                    }
+                    .shop-btn{
+                        margin: 0 auto;
+                        margin-top: 30px;
+                    }
+                }
+                .shop__games{
+                    gap: 50px;
+                    padding-bottom: 50px !important;
+                    .shopping__box__left{
+                        img{
+                            width: 260px !important;
+                        }
+                        h4{
+                            font-size: 20px;
+                            line-height: 30px;
+                            text-align: center;
+                        }
+                        p{
+                            padding-left: 0;
+                            padding-top: 30px;
+                        }
+                    }
+                    .shopping__box__right{
+                        width: 100%;
+                        .shopping__box{
+                            width: 100% !important;
+                            img{
+                                width: 260px !important;
+                                margin: 0 auto !important;
+                            }
+                            h5{
+                                width: 100%;
+                                font-size: 22px;
+                                padding-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .pages{
+            .gaming__community{
+                padding-top: 60px;
+                h2{
+                    font-size: 20px !important;
+                    line-height: 35px !important;
+                }
+            }
+            p{
+                width: 270px !important;
+            }
+            label{
+                left: 10% !important;
+            }
+        }
+    }
+    footer{
+        .contact{
+            .container{
+                .contact__top{
+                    width: 100% !important;
+                    padding-top: 50px;
+                    .contact__left{
+                        width: 100% !important;
+                        p{
+                            width: 100% !important;
+                        }
+                    }
+                    .social__icons{
+                        .icons{
+                            flex-wrap: wrap;
+                            .icon{
+                                svg{
+                                    width: 35px;
+                                    height: 35px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
